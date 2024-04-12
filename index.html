@@ -7,7 +7,10 @@
     body {
         font-family: Arial, sans-serif;
         margin: 0;
-        background-color: #ffffff;
+        background:
+        linear-gradient(to top left,blue, transparent),
+        linear-gradient(to top right, green, transparent);
+        background-blend-mode: screen;
     }
     header {
         background-color: #2d2c2c;
@@ -26,10 +29,10 @@
         justify-content: space-between;
     }
     .product-card {
-        width: 30%;
+        width: calc(30% - 1rem);
         margin-bottom: 1rem;
         padding: 1rem;
-        background-color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.7);
         border-radius: 5px;
         box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
     }
@@ -89,7 +92,7 @@
         </div>
         <div class="product-card">
             <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/Cofee.png?raw=true">
-            <h3>Cofee Beans</h3>
+            <h3>Coffee Beans</h3>
             <p>The berries harvested from species of Coffea plants.</p>
             <p class="price">₹3000.00 per kg.</p>
         </div>
