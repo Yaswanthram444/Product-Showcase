@@ -1,117 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Product Showcase</title>
-<style>
-
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background:
-        linear-gradient(to top right,red, transparent),
-        linear-gradient(to top left, white, transparent);
-        background-blend-mode: screen;
-    }
-    header {
-        background-color: #1e2820;
-        color: #ffffff;
-        text-align: center;
-        padding: 1rem;
-    }
-    .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 2rem;
-    }
-    .product {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .product-card {
-        width: calc(30% - 2rem);
-        margin-bottom: 1rem;
-        padding: 1rem;
-        background-color: rgba(255, 255, 255, 0.526);
-        border-radius: 5px;
-        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.307);
-    }
-    .product-card img {
-        width: 100%;
-        height: auto;
-        border-radius: 5px;
-        
-    }
-    .product-card:hover img {
-    transform: scale(1.05);
-    transition: transform 0.3s;
-    }
-
-
-    .product-card .price {
-        font-weight: bold;
-        color: #2600ff;
-    }
-    @media (min-width: 100px)and (max-width: 700px)  {
-        .product-card {
-            width: calc(40% - 1rem);
-        }
-    }
-
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Product Showcase</title>
 </head>
-<body>
-<header>
-    <h1>Product Showcase</h1>
-</header>
-<div class="container">
-    <div class="product">
-        <div class="product-card">
-            <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/apple.png?raw=true">
-            <h3>Apples</h3>
-            <p>Fresh organic apples.</p>
-            <p class="price">₹120 per dozen.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/grapes.png?raw=true">
-            <h3>Grapes</h3>
-            <p>A grape is a fruit, botanically a berry.</p>
-            <p class="price">₹140.00 per Kg.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/Honey.png?raw=true" >
-            <h3>Organic Honey</h3>
-            <p>Pure organic honey harvested from local beehives.</p>
-            <p class="price">₹1500.00 per Kg.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/orange.png?raw=true">
-            <h3>Oranges</h3>
-            <p>Fruits with fragrant, leathery skin and juicy flesh.</p>
-            <p class="price">₹70.00 per Kg.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/Bread.png?raw=true">
-            <h3>Bread</h3>
-            <p>Baked food product made of flour or meal that is moistened, kneaded, and sometimes fermented.</p>
-            <p class="price">₹50.00 per Pack.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/Cofee.png?raw=true">
-            <h3>Coffee Beans</h3>
-            <p>The berries harvested from species of Coffea plants.</p>
-            <p class="price">₹3000.00 per kg.</p>
-        </div>
-        <div class="product-card">
-            <img src="https://github.com/Yaswanthram444/Product-Showcase/blob/main/Tomato.png?raw=true">
-            <h3>Tomato</h3>
-            <p>A juicy fruit, usually red, that looks like a big berry.</p>
-            <p class="price">₹50.00 per kg.</p>
-        </div>
-        
-    </div>
-</div>
-</body>
-</html>
 
+<body>
+    <header>
+        <h1>PRODUCT SHOWCASE</h1>
+        
+    </header>
+    <div class="container">
+        <div class="card">
+            <img src="apple.png" alt="Apple">
+            <div class="content">
+                <h3>Apple</h3>
+                <p>
+                    Fresh organic apples.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Cofee.png" alt="Coffee Beans">
+            <div class="content">
+                <h3>Coffee</h3>
+                <p>
+                    The berries harvested from species of Coffea plants.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Tomato.png" alt="Tomato">
+            <div class="content">
+                <h3>Tomato</h3>
+                <p>
+                    A juicy fruit, usually red, that looks like a big berry.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="grapes.png" alt="Grapes">
+            <div class="content">
+                <h3>Grapes</h3>
+                <p>
+                    A grape is a fruit, botanically a berry.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Bread.png" alt="Bread">
+            <div class="content">
+                <h3>Bread</h3>
+                <p>
+                    Flour or meal that is moistened and sometimes fermented.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="orange.png" alt="Orange">
+            <div class="content">
+                <h3>Orange</h3>
+                <p>
+                    Fruits with fragrant, leathery skin and juicy flesh.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="Honey.png" alt="honey">
+            <div class="content">
+                <h3>Honey</h3>
+                <p>
+                    Pure organic honey harvested from local beehives.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
